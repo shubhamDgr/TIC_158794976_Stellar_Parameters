@@ -1,0 +1,48 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2024-10-08T20:36:44 [V7.33.3]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2024-10-08T20:36:44	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-oc.form=dec&-out.max=1&-out.add=_r&-out.add=_RAJ,_DEJ&-sort=_r&-order=I&-out.src=I/347/gaia2dis&-c=Gaia DR3 2102332172948222976&-c.eq=J2000&-c.r=  2&-c.u=arcmin&-c.geom=r&-source=I/347/gaia2dis&-out.orig=standard&-out=Source&Source=2102332172948222976&-out=RA_ICRS&-out=DE_ICRS&-out=rest&-out=b_rest&-out=B_rest&-out=rlen&-out=ResFlag&-out=ModFlag&	  Full request URL (POST)
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=7.33.3	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=288.718356+42.502285,rm=2.	
+#Constraint -bmark=POST
+
+#RESOURCE=yCat_1347
+#Name: I/347
+#Title: Distances to 1.33 billion stars in Gaia DR2 (Bailer-Jones+, 2018)
+#INFO	ivoid=ivo://cds.vizier/i/347	    IVOID of underlying data collection
+#INFO	creator=Bailer-Jones C.A.L.	    First author or institution
+#INFO	cites=bibcode:2018AJ....156...58B	    Article or Data origin sources
+#INFO	editor=Astronomical Journal (AAS)	    Editor name (article)
+#INFO	original_date=2018	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/I/347	    Dataset landing page
+#INFO	publication_date=2024-01-08	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	H_2015.500:	ICRS
+#Table	I_347_gaia2dis:
+#Name: I/347/gaia2dis
+#Title: Estimating distances from parallaxes (1331909727 sources)
+#Column	_r	(F6.4)	Distance from center (288.71835562000+42.50228543000)[ICRS], at Epoch=J2015.5	[ucd=pos.angDistance]
+#Column	_RAJ2000	(F17.13)	Right ascension (FK5, Equinox=J2000.0) at Epoch=J2015.5 (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)	[ucd=pos.eq.ra]
+#Column	_DEJ2000	(F17.13)	Declination (FK5, Equinox=J2000.0) at Epoch=J2015.5 (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)	[ucd=pos.eq.dec]
+#Column	Source	(I19)	Source identifier, identical to the Gaia-DR2 source_id (id)	[ucd=meta.id;meta.main]
+#Column	RA_ICRS	(F15.11)	Barycentric right ascension (ICRS) at Ep=2015.5 (ra)	[ucd=pos.eq.ra;meta.main]
+#Column	DE_ICRS	(F15.11)	Barycentric declination (ICRS) at Ep=2015.5 (dec)	[ucd=pos.eq.dec;meta.main]
+#Column	rest	(F21.15)	? Estimated distance (r_est)	[ucd=pos.distance;stat.mean]
+#Column	b_rest	(F21.15)	? Lower bound on the confidence interval of the estimated distance (r_lo)	[ucd=pos.distance;stat.min]
+#Column	B_rest	(F21.15)	? Upper bound on the confidence interval of the estimated distance (r_hi)	[ucd=pos.distance;stat.max]
+#Column	rlen	(F16.12)	Length scale used in the prior for the distance estimation (r_len)	[ucd=stat.value]
+#Column	ResFlag	(A1)	[0-2] Result flag (result_flag) (1)	[ucd=meta.code]
+#Column	ModFlag	(I1)	[1/2] Number of modes in the posterior (modality_flag)	[ucd=meta.code]
+_r	_RAJ2000	_DEJ2000	Source	RA_ICRS	DE_ICRS	rest	b_rest	B_rest	rlen	ResFlag	ModFlag
+arcmin	deg	deg	 	deg	deg	pc	pc	pc	pc	 	
+------	-----------------	-----------------	-------------------	---------------	---------------	---------------------	---------------------	---------------------	----------------	-	-
+0.0044	288.7184554730426	+42.5022778455755	2102332172948222976	288.71845547304	+42.50227784558	  432.460741311479012	  427.570493471807993	  437.462097764932025	902.462725924560	1	1
+

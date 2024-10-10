@@ -1,0 +1,2 @@
+source_id,teff_gspphot_lower,teff_gspphot_upper,vbroad,vbroad_error,vbroad_nb_transits,visibility_periods_used,designation,ra,dec,parallax,parallax_error,pmra,pmra_error,pmdec,pmdec_error,phot_g_mean_mag,phot_bp_mean_mag,phot_rp_mean_mag,phot_variable_flag,bp_rp,bp_g,g_rp
+2.10233E+18,7447.4624,7477.898,104.38395,8.42743,10,27,Gaia DR3 2102332172948222976,288.7184587,42.50227756,2.337471842,0.012115506,17.10214287,0.014602645,-1.770164441,0.01736456,10.12805,10.258041,9.885968,VARIABLE,0.37207317,0.12999153,0.24208164
