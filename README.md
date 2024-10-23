@@ -26,7 +26,7 @@ The inbuilt **Box Least Square (BLS)** function in Lightkurve was used to phase-
 ### 3.2 Semi-Major Axis of the System
 The semi-major axis was calculated using:
 \[
-a = \frac{K_1 P (q + 1)}{2 \pi q \sin i}
+a = {K_1* P *(q + 1)}/{2 *pi * q *sin i}
 \]
 Where \(i\) is the inclination, \(q\) is the mass ratio. The calculated semi-major axis is **4.51 R⊙**, compared to **4.189 R⊙** in [1].
 
@@ -37,34 +37,34 @@ The semi-amplitude of the RV curve was approximated as the mean of the maximum a
 ### 3.4 Combined Mass
 Using Kepler’s third law, the combined mass of the system was calculated as:
 \[
-m_1 + m_2 = \frac{4 \pi^2 a^3}{G P^2}
+m_1 + m_2 = 4 *pi^2 *a^3/{G* P^2}
 \]
 Result: **2.077 M⊙**, compared to **2 M⊙** from [1].
 
 ### 3.5 Temperature Ratio
 Using the Stefan-Boltzmann Law, the temperature ratio of the two stars was approximated from the depth of the eclipses. The ratio of temperatures was found to be:
 \[
-\left( \frac{T_A}{T_B} \right)^4 = \frac{\text{Primary Eclipse Depth}}{\text{Secondary Eclipse Depth}}
+(T_A/T_B )^4 = {Primary Eclipse Depth}/{Secondary Eclipse Depth}
 \]
 Result: **1.036**, compared to **1.164** in [1].
 
 ### 3.6 Luminosity
 Using the blackbody approximation, the total luminosity of the system was found to be:
 \[
-L = 4 \pi R_A^2 \sigma T_A^4 + 4 \pi R_B^2 \sigma T_B^4
+L = 4*pi* R_A^2* sigma* T_A^4  +  4*pi* R_B^2* sigma *T_B^4
 \]
 Result: **14.85 L⊙**, compared to **14.4 L⊙** from [1].
 
 ### 3.7 Absolute Magnitude
 Using the calculated luminosities, the absolute magnitudes of the stars were determined by:
 \[
-m_2 - m_1 = -2.5 \log_{10} \left( \frac{L_1}{L_2} \right)
+m_2 - m_1 = -2.5 log (L_1/L_2)
 \]
 
 ### 3.8 Distance
 The distance to the system was calculated using the distance modulus:
 \[
-m - M = 5 \log_{10} d - 5
+m - M = 5 log d - 5
 \]
 Result: **442.11 parsecs**, compared to **432.46 parsecs** from Gaia DR3.
 
